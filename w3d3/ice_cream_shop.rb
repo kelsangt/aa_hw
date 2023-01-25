@@ -1,6 +1,7 @@
 
 def ice_cream_shop(flavors, favorite)
     return false if flavors.empty?
+    return true if flavors[0] == favorite
     ice_cream_shop(flavors[1..-1], favorite)
 end
 
