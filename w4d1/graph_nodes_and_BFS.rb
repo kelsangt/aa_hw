@@ -27,5 +27,5 @@ def bfs(starting_node, target_value)
     return nil
 end
 
-# p bfs(a, "b")
+p bfs(a, "b")
 p bfs(a, "f")
