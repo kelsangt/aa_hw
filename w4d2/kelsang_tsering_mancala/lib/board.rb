@@ -10,7 +10,6 @@ class Board
 
   def place_stones
     # helper method to #initialize every non-store cup with four stones each
-      # cups << [:stone, :stone, :stone, :stone]
     @cups.each_with_index do |cup, idx|
       4.times do |ele|
         cups[idx] << :stone
