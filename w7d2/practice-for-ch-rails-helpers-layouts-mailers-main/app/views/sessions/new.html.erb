@@ -7,7 +7,7 @@
       <input
         type="hidden"
         name="authenticity_token"
-        value="<%= form_authenticity_token %>"
+        value="<%= auth_token %>"
       >
 
       <label for="user_username">Username: </label>
@@ -20,4 +20,7 @@
 
       <input type="submit" value="Sign in">
     </form>
+    <% content_for :footer do %>
+      <p>This is the sessions new page.</p>
+    <% end %>
 </div></section>
