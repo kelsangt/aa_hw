@@ -8,4 +8,13 @@ RSpec.describe User, type: :model do
       is_at_least(6).
       on(:create)
   end
+  it 'validates password' do 
+    expect(self.is_password?(password)).to eq(true)
+  end
+  it 'resets session token' do 
+    expect(self.reset_session_token!).to_not eq(session[:session_token])
+  end
+  it 'finds user by credentials' do 
+    expect(User.find_by_credentials(email, password)).to eq(self)
+  end
 end
