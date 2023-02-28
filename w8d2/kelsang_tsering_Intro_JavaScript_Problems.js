@@ -1,3 +1,5 @@
+// Phase 1
+
 // function mysteryScoping1() {
 //     var x = 'out of block';
 //     if (true) {
@@ -8,14 +10,14 @@
 // }
 
 
-function mysteryScoping2() {
-    const x = 'out of block';
-    if (true) {
-      const x = 'in block';  
-      console.log(x);
-    }
-    console.log(x);
-}
+// function mysteryScoping2() {
+//     const x = 'out of block';
+//     if (true) {
+//       const x = 'in block';  
+//       console.log(x);
+//     }
+//     console.log(x);
+// }
   
 // function mysteryScoping3() {
 //     const x = 'out of block';
@@ -46,5 +48,21 @@ function mysteryScoping2() {
 // }
 
 // mysteryScoping1()
+// mysteryScoping3()
+// mysteryScoping4()
+// mysteryScoping5()
 
-mysteryScoping2()
+
+function madLib(verb, adjective, noun) {
+     console.log(`We shall ${verb.toUpperCase()} the ${adjective.toUpperCase()} ${noun.toUpperCase()}`);
+}
+
+madLib('make', 'best', 'guac')
+
+function isSubstring(searchString, subString) {
+    return searchString.split(" ").includes(subString) 
+}
+
+console.log(isSubstring("time to program", "time"))
+console.log(isSubstring("Jump for joy", "joys"))
+
